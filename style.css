@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+body{
+    font-family: 'Tilt Neon', cursive;
+    background-color: #f6f9f6;
+    color: #602C6F;
+}
+
+/* ======= Barra de navegación =======*/
+#brand img {
+    border-radius: 50% !important;
+}
+
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f6f9f6;
+}
+/* =======Portada=======*/
+.hero {
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  .hero h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+/* ======= información =======*/
+
+.main{
+    justify-content: space-around
+}
+#id img{
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+.container{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+
+}
+.info{
+    padding: 10px;
+    justify-content: center;
+}
+
+.info img{
+    border-radius: 50%;
+    width: 178px;
+    height: 100px;
+}
+
+.game img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.info h5{
+    margin-top: 20px;
+}
+.info p {
+    font-size: 16px;
+    text-align: justify !important;
+}
+
+.btn-info{
+    border-color: #F8B700;
+    background-color: white;
+    font-size: 10px;
+    color: #F8B700;
+    border-radius: 35px;
+    width: 50px;
+    height: 25px;
+}
+
+.div-info{
+    margin-top: 50px;
+}
+
+.content{
+    height: 150px;
+    display: none;
+    justify-content: center;
+}
+
+.content ol{
+    margin: 0;
+    padding: 0;
+}
+.content li{
+    list-style: none;
+}
+
+/* ====== Media queries SM ======== */
+
+@media(max-width:768px){
+    #intro, #galery, #conocenos{
+        width: 90% !important;
+    }
+}
+
+@media(max-width:420px){
+    .galery{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-between;
+    }
+}
+
+
+/* ======= Footer ======= */
+
+#footer-section{
+   min-height: 30px;
+   position:relative;
+}
+
+footer {
+    margin-top: 2px;
+    background-color: #F13652;
+    min-height: 50px;
+}
+
+footer p {
+    color: white;
+    text-align: justify;
+    font-size: 12px;
+}
+
+#icons i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: white;
+}
+
